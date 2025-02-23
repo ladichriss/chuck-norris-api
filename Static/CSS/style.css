@@ -1,17 +1,43 @@
-@import url(button.css);
+@import url('button.css');
+@import url('select.css');
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    width: 50vh; 
+    width: 50vw;
+    min-height: 50vh;
     background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.joke {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    color: black;
 }
